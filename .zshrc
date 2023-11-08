@@ -117,9 +117,14 @@ alias l='ls -CF'
 alias venvactivate='source venv/bin/activate'
 alias createvenv="python -m venv venv && venvactivate"
 alias update="sudo apt update && sudo apt upgrade && sudo apt autoremove"
+alias rmdir="rm -rf"
 source /etc/zsh_command_not_found
 export EDITOR=/usr/bin/vim
 
 #Adding user dir to path for executables...
 PATH=$PATH:/home/frjr17
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
