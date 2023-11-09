@@ -118,6 +118,7 @@ alias venvactivate='source venv/bin/activate'
 alias createvenv="python -m venv venv && venvactivate"
 alias update="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias rmdir="rm -rf"
+alias open="wslview"
 source /etc/zsh_command_not_found
 export EDITOR=/usr/bin/vim
 
